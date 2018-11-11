@@ -16,8 +16,13 @@
   <body>
     <div class="container">
       <h1>To Do's</h1>
-      <input class="addInput" placeholder="Add Todo" /> <button class="addButton">Add Todo</button>
+      <form onclick="functino(e) {e.preventDefault()}" class="form">
+        <input class="addInput" placeholder="Add Todo" />
+        <button class="addButton">Add Todo</button>
+      </form>
+
       <div class="todos"></div>
+      <button class="clearButton">Clear Completed</button>
     </div>
     <script src="index.js"></script>
   </body>
